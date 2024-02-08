@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="../stylesheets/style.css" rel="stylesheet">
+    <script src="../scripts/script.js" defer></script>
+    <title>My Playlist</title>
+  </head>
+  <body>
+    <div class="ref-div">
+      <div class="main initAnim" id="main">
+        <div class="title">
+          <span style="grid-area: 2 / 1 / 3 / 2;">
+            <h2 style="margin-bottom: 0; font-size: 40px; font-family: Helvetica, sans-serif; font-weight: 600;">The World</h2>
+            <h5 style="font-size: 20px; margin-top: 0; font-family: Helvetica, sans-serif; font-weight: 200;">Eusha • <span id="songs">2</span> songs</h5>
+          </span>
+          <span style="grid-area: 2 / 2 / 3 / 3;">
+            <span id="addMusicButton"><h3 style="text-align: right; font-size: 44px; margin-right: 15px;">+</h3></span>
+          </span>
+        </div>
+
+        <div class="track-body">
+          <table id="table">
+            <colgroup>
+              <col span="1" style="width: 5%;">
+              <col span="1" style="width: 8%;">
+              <col span="1" style="width: 20%;">
+              <col span="1" style="width: 37%;">
+              <col span="1" style="width: 30%;">
+            </colgroup>
+
+            <tr style="text-align: left;">
+              <th style="text-align: center;">#</th>
+              <th>Song</th>
+              <th style="color: #121212;">A</th>
+              <th>Album</th>
+              <th style="text-align: right;">Time</th>
+            </tr>
+
+            <tr>
+              <td style="text-align: center;">></td>
+              <td><img src="../album_covers/imase.jpeg" class="cover-style"/></td>
+              <td>Night Dancer <br /> <span style="font-size: 15px;">imase</span></td>
+              <td>Night Dancer</td>
+              <td style="text-align: right;">3:30</td>
+            </tr>
+
+            <tr>
+              <td style="text-align: center;">></td>
+              <td><img src="../album_covers/Sanguine_Paradise.jpg" class="cover-style"/></td>
+              <td>Sanguine Paradise <br /> <span style="font-size: 15px;">Lil Uzi Vert</span></td>
+              <td>Luv is Rage 2</td>
+              <td style="text-align: right;">4:04</td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="addSongSidebar" class="addSong">
+      <h1 class="sidebarLabel">Add New Song</h1>
+        <form id="myForm">
+            <input type="text" id="name" placeholder="Name" style="margin: 5px 0px 5px 0px;"><br>
+            <input type="text" id="artist" placeholder="Artist" style="margin: 5px 0px 5px 0px;"><br>
+            <input type="text" id="album" placeholder="Album" style="margin: 5px 0px 5px 0px;"><br>
+            <input type="text" id="songLength" placeholder="Song Duration" style="margin: 5px 0px 5px 0px;"><br>
+            <input type="text" id="link" placeholder="Song Link" style="margin: 5px 0px 5px 0px;"><br>
+            <input type="text" id="photo" placeholder="Album Photo Link" style="margin: 5px 0px 5px 0px;"><br>
+            <button type="button" id="submit" style="margin: 5px 0px 5px 0px;">Add</button>
+            <button type="button" class="close" id="close">Close</button>
+        </form>
+
+    </div>
+  </body>
+</html>
