@@ -16,8 +16,8 @@ window.onload = function() {
     const photo = document.getElementById("photo");
 
     let songs = document.getElementById("songs");
-    let songCount = 2;
-    let i = 3;
+    let songCount = 3;
+    let i = 5;
 
     // The event
     let popOutState = false;
@@ -55,6 +55,13 @@ window.onload = function() {
         var cell4 = row.insertCell(3);
         var cell5 = row.insertCell(4);
 
+        let img = document.createElement("img");
+        img.src = photo.value;
+        console.log(photo.value);
+
+        img.classList.add("cover-style");
+        cell2.appendChild(img);
+
         cell3.innerHTML = name.value + "<br /> <span style=\"font-size: 15px;\">" + artist.value + "</span>";
         artist = String(artist);
         console.log(artist.length);
@@ -73,4 +80,8 @@ window.onload = function() {
         popOutState = false;
         main.classList.remove("animationInForMain");
     });
+
+    if (songCount > 6) {
+        main.style.height = "auto";
+    }
 }
