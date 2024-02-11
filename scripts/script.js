@@ -5,9 +5,10 @@ window.onload = function() {
   let submit = document.getElementById("submit");
   let myForm = document.getElementById("myForm");
   let main = document.getElementById("main");
+  let trackBody = document.getElementById("track-body");
   let widthSidebar = Math.round(window.innerWidth * 0.22);
   const close = document.getElementById("close");
-
+  let body = document.getElementsByTagName("body");
   const name = document.getElementById("name");
   let artist = document.getElementById("artist");
   const album = document.getElementById("album");
@@ -62,6 +63,8 @@ window.onload = function() {
     var cell4 = row.insertCell(3);
     var cell5 = row.insertCell(4);
 
+    cell1.innerHTML = "<a href=\"" + link.value + "\" target=\"_blank\"><i class=\"fa-solid fa-play\"></i></a>"
+    cell1.style.textAlign = "center";
     // Insert image into the new row, add styling to image
     let img = document.createElement("img");
     img.src = photo.value;
@@ -92,8 +95,8 @@ window.onload = function() {
 
     if (songCount > 6) {
       main.style.height = "auto";
+      trackBody.style.height = "auto";
+      body.style.height = "auto";
     }
   });
-
-
 }

@@ -223,3 +223,12 @@ input {
     background-color: #ffffff;
     color: #ff0f0f;
 }
+
+i {
+    color: #0dde45;
+    transition: 0.3s;
+}
+
+i:hover {
+    color: #ffffff;
+}
