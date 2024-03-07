@@ -232,3 +232,23 @@ i {
 i:hover {
     color: #ffffff;
 }
+
+#play-play {
+  color: #ffffff;
+  padding: 0;
+  color: white;
+  padding: 10px;
+
+  border: none;
+  border-radius: 9px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+
+  margin-top: 10% !important;
+  transition: 0.3s;
+}
+
+#play-play:hover {
+  color: #6e2ccc;
+}
