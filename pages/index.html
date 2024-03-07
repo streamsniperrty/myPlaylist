@@ -1,89 +1,99 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="../stylesheets/style.css" rel="stylesheet">
-    <script src="../scripts/script.js" defer></script>
-    <script src="https://kit.fontawesome.com/81fb8cfee3.js" crossorigin="anonymous"></script>
-    <title>eusha's playlist</title>
-  </head>
-  <body>
-    <div class="ref-div">
-      <div class="main initAnim" id="main">
-        <div class="title">
-          <span style="grid-area: 2 / 1 / 3 / 2;">
-            <h2 style="margin-bottom: 0; font-size: 40px; font-family: Helvetica, sans-serif; font-weight: 600;">Indie</h2>
-            <h5 style="font-size: 20px; margin-top: 0; font-family: Helvetica, sans-serif; font-weight: 200;">Eusha • <span id="songs">3</span> songs</h5>
+
+<head>
+  <meta charset="utf-8">
+  <link href="../stylesheets/style.css" rel="stylesheet">
+  <script src="../scripts/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/81fb8cfee3.js" crossorigin="anonymous"></script>
+  <title>eusha's playlist</title>
+</head>
+
+<body>
+  <div class="ref-div">
+    <div class="main initAnim" id="main">
+      <div class="title">
+        <span style="grid-area: 2 / 1 / 3 / 2;">
+          <h2 style="margin-bottom: 0; font-size: 40px; font-family: Helvetica, sans-serif; font-weight: 600;">Indie
+          </h2>
+          <h5 style="font-size: 20px; margin-top: 0; font-family: Helvetica, sans-serif; font-weight: 200;">Eusha •
+            <span id="songs">3</span> songs</h5>
+        </span>
+        <span style="grid-area: 2 / 2 / 3 / 3;">
+          <span id="addMusicButton">
+            <h3 style="text-align: right; font-size: 44px; margin-right: 15px;">+</h3>
           </span>
-          <span style="grid-area: 2 / 2 / 3 / 3;">
-            <span id="addMusicButton"><h3 style="text-align: right; font-size: 44px; margin-right: 15px;">+</h3></span>
-          </span>
-        </div>
+        </span>
+      </div>
 
-        <div class="track-body" id="track-body">
-          <table id="table">
-            <colgroup>
-              <col span="1" style="width: 5%;">
-              <col span="1" style="width: 8%;">
-              <col span="1" style="width: 20%;">
-              <col span="1" style="width: 37%;">
-              <col span="1" style="width: 30%;">
-            </colgroup>
+      <div class="track-body" id="track-body">
+        <table id="table">
+          <colgroup>
+            <col span="1" style="width: 5%;">
+            <col span="1" style="width: 8%;">
+            <col span="1" style="width: 20%;">
+            <col span="1" style="width: 37%;">
+            <col span="1" style="width: 30%;">
+          </colgroup>
 
-            <tr style="text-align: left; margin-bottom: 2%;">
-              <th style="text-align: center;">#</th>
-              <th>Song</th>
-              <th style="color: #121212;">‎ </th>
-              <th>Album</th>
-              <th style="text-align: right;">Time</th>
-            </tr>
+          <tr style="text-align: left; margin-bottom: 2%;">
+            <th style="text-align: center;">#</th>
+            <th>Song</th>
+            <th style="color: #121212;">‎ </th>
+            <th>Album</th>
+            <th style="text-align: right;">Time</th>
+          </tr>
 
-            <tr>
-              <td style="background-color: #121212;">‎ </td>
-            </tr>
+          <tr>
+            <td style="background-color: #121212;">‎ </td>
+          </tr>
 
-            <tr>
-              <td style="text-align: center;"><a href="https://www.google.com" target="_blank" id="play-play"><i class="fa-solid fa-play"></i></a></td>
-              <td><img src="../album_covers/imase.jpeg" class="cover-style"/></td>
-              <td>Night Dancer <br /> <span style="font-size: 14px;">imase</span></td>
-              <td>POP CUBE</td>
-              <td style="text-align: right;">3:30</td>
-            </tr>
+          <tr>
+            <td style="text-align: center;"><a href="https://www.google.com" target="_blank" id="play-play"><i
+                  class="fa-solid fa-play"></i></a></td>
+            <td><img src="../album_covers/imase.jpeg" class="cover-style" /></td>
+            <td>Night Dancer <br /> <span style="font-size: 14px;">imase</span></td>
+            <td>POP CUBE</td>
+            <td style="text-align: right;">3:30</td>
+          </tr>
 
-            <tr>
-              <td style="text-align: center;"><<a href="https://www.google.com" target="_blank" id="play-play"><i class="fa-solid fa-play"></i></a></td>
-              <td><img src="../album_covers/tekit.jpeg" class="cover-style"/></td>
-              <td>Tek It <br /> <span style="font-size: 14px;">Cafune</span></td>
-              <td>Running</td>
-              <td style="text-align: right;">3:11</td>
-            </tr>
+          <tr>
+            <td style="text-align: center;"><a href="https://www.google.com" target="_blank" id="play-play"><i
+                  class="fa-solid fa-play"></i></a></td>
+            <td><img src="../album_covers/tekit.jpeg" class="cover-style" /></td>
+            <td>Tek It <br /> <span style="font-size: 14px;">Cafune</span></td>
+            <td>Running</td>
+            <td style="text-align: right;">3:11</td>
+          </tr>
 
-            <tr>
-              <td style="text-align: center;"><a href="https://www.google.com" target="_blank" id="play-play"><i class="fa-solid fa-play"></i></a></td>
-              <td><img src="../album_covers/nouvelle.jpg" class="cover-style"/></td>
-              <td>nouvelle vague <br /> <span style="font-size: 14px;">wave to earth</span></td>
-              <td>nouvelle vague</td>
-              <td style="text-align: right;">3:50</td>
-            </tr>
+          <tr>
+            <td style="text-align: center;"><a href="https://www.google.com" target="_blank" id="play-play"><i
+                  class="fa-solid fa-play"></i></a></td>
+            <td><img src="../album_covers/nouvelle.jpg" class="cover-style" /></td>
+            <td>nouvelle vague <br /> <span style="font-size: 14px;">wave to earth</span></td>
+            <td>nouvelle vague</td>
+            <td style="text-align: right;">3:50</td>
+          </tr>
 
-          </table>
-        </div>
+        </table>
       </div>
     </div>
+  </div>
 
-    <div id="addSongSidebar" class="addSong">
-      <h1 class="sidebarLabel">Add New Song</h1>
-        <form id="myForm">
-            <input type="text" id="name" placeholder="Name" style="margin: 5px 0px 5px 0px;"><br>
-            <input type="text" id="artist" placeholder="Artist" style="margin: 5px 0px 5px 0px;"><br>
-            <input type="text" id="album" placeholder="Album" style="margin: 5px 0px 5px 0px;"><br>
-            <input type="text" id="songLength" placeholder="Song Duration" style="margin: 5px 0px 5px 0px;"><br>
-            <input type="text" id="link" placeholder="Song Link" style="margin: 5px 0px 5px 0px;"><br>
-            <input type="text" id="photo" placeholder="Album Photo Link" style="margin: 5px 0px 5px 0px;"><br>
-            <button type="button" id="submit" style="margin: 5px 0px 5px 0px;">Add</button>
-            <button type="button" class="close" id="close">Close</button>
-        </form>
+  <div id="addSongSidebar" class="addSong">
+    <h1 class="sidebarLabel">Add New Song</h1>
+    <form id="myForm">
+      <input type="text" id="name" placeholder="Name" style="margin: 5px 0px 5px 0px;"><br>
+      <input type="text" id="artist" placeholder="Artist" style="margin: 5px 0px 5px 0px;"><br>
+      <input type="text" id="album" placeholder="Album" style="margin: 5px 0px 5px 0px;"><br>
+      <input type="text" id="songLength" placeholder="Song Duration" style="margin: 5px 0px 5px 0px;"><br>
+      <input type="text" id="link" placeholder="Song Link" style="margin: 5px 0px 5px 0px;"><br>
+      <input type="text" id="photo" placeholder="Album Photo Link" style="margin: 5px 0px 5px 0px;"><br>
+      <button type="button" id="submit" style="margin: 5px 0px 5px 0px;">Add</button>
+      <button type="button" class="close" id="close">Close</button>
+    </form>
 
-    </div>
-  </body>
+  </div>
+</body>
+
 </html>
