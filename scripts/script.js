@@ -63,7 +63,7 @@ window.onload = function() {
     var cell4 = row.insertCell(3);
     var cell5 = row.insertCell(4);
 
-    cell1.innerHTML = "<a href=\"" + link.value + "\" target=\"_blank\"><i class=\"fa-solid fa-play\"></i></a>"
+    cell1.innerHTML = "<a href=\"" + link.value + "\" target=\"_blank\" id=\"play-play\"><i class=\"fa-solid fa-play\"></i></a>"
     cell1.style.textAlign = "center";
     // Insert image into the new row, add styling to image
     let img = document.createElement("img");
